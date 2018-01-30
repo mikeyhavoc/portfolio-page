@@ -1,0 +1,35 @@
+{
+  "name": "responsive_site",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeyhavoc/portfolio-page.git"
+  },
+  "keywords": [
+    "portfolio",
+    "mikeyhavoc",
+    "responsive"
+  ],
+  "author": "michael williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeyhavoc/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/mikeyhavoc/portfolio-page#readme",
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
