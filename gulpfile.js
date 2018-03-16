@@ -5,10 +5,10 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
-gulp.task('css', function () {
+gulp.task('css', function() {
     return gulp.src('src/sass/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
@@ -17,7 +17,7 @@ gulp.task('css', function () {
         .pipe(browserSync.stream())
 });
 
-gulp.task('images', function () {
+gulp.task('images', function() {
     return gulp.src('src/img/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
